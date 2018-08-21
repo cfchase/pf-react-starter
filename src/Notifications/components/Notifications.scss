@@ -1,0 +1,31 @@
+.Home {
+  .container-cards-pf {
+    margin-top: 0;
+    height: calc(100vh - 60px);
+    padding-top: 50px;
+  }
+
+  .card-pf {
+    &.disabled {
+      color: #9c9c9c;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
+    &:hover:not(.disabled) {
+      cursor: pointer;
+      border-top-color: #39a5dc;
+    }
+  }
+
+  .card-pf-title {
+    font-size: 18px;
+  }
+
+  .card-pf-body {
+    font-size: 14px;
+  }
+
+}
